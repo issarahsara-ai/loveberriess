@@ -16,9 +16,7 @@ const SlideBurning = () => {
     }} className="max-w-3xl mx-auto text-center">
         <Flame className="w-8 h-8 text-rose mx-auto mb-8 animate-pulse-soft" />
         
-        <blockquote className="font-serif italic text-xl md:text-2xl lg:text-3xl text-foreground/85 leading-relaxed mb-10">
-          "I felt it when Simon said: 'I cannot stop thinking of you, from the mornings you ease, to the evenings you quiet, to the dreams you inhabit, my thoughts of you never end. I am yours, I have always been yours.'"
-        </blockquote>
+        <blockquote className="font-serif italic text-xl md:text-2xl lg:text-3xl text-foreground/85 leading-relaxed mb-10">I felt it when Simon said: 'I cannot stop thinking of you, from the mornings you ease, to the evenings you quiet, to the dreams you inhabit, my thoughts of you never end. I am yours, I have always been yours.'</blockquote>
         
         <div className="decorative-line" />
         
