@@ -48,9 +48,7 @@ const SlideBurning = () => {
         once: true
       }} className="flex items-center justify-center gap-3 mt-10">
           
-          <span className="font-serif text-2xl md:text-3xl text-rose">
-            I burn for you, Maream
-          </span>
+          <span className="font-serif text-2xl md:text-3xl text-rose">I burn for you, Maream.</span>
           
         </motion.div>
       </motion.div>
