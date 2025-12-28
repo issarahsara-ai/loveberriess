@@ -5,12 +5,13 @@ import NavigationDots from '@/components/NavigationDots';
 import SlideQuote from '@/components/SlideQuote';
 import SlideReasons from '@/components/SlideReasons';
 import SlideChapters from '@/components/SlideChapters';
+import SlidePhrases from '@/components/SlidePhrases';
 import SlideBurning from '@/components/SlideBurning';
 import ScrollIndicator from '@/components/ScrollIndicator';
 
 const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 5;
+  const totalSlides = 6;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,7 +56,10 @@ const Index = () => {
       {/* Slide 3: Chapters */}
       <SlideChapters />
 
-      {/* Slide 4: Burning */}
+      {/* Slide 4: Phrases */}
+      <SlidePhrases />
+
+      {/* Slide 5: Burning */}
       <SlideBurning />
 
       {/* Slide 5: Closing Quote */}
