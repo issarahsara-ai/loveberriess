@@ -1,13 +1,20 @@
 import { motion } from 'framer-motion';
-import { Heart, ImagePlus } from 'lucide-react';
+import { Heart } from 'lucide-react';
+
+import gallery1 from '@/assets/gallery-1.jpg';
+import gallery2 from '@/assets/gallery-2.jpg';
+import gallery3 from '@/assets/gallery-3.jpg';
+import gallery4 from '@/assets/gallery-4.jpg';
+import gallery5 from '@/assets/gallery-5.jpg';
+import gallery6 from '@/assets/gallery-6.jpg';
 
 const galleryImages = [
-  { id: 1, src: null, caption: "Our first moment" },
-  { id: 2, src: null, caption: "Adventures together" },
-  { id: 3, src: null, caption: "Precious memories" },
-  { id: 4, src: null, caption: "Forever yours" },
-  { id: 5, src: null, caption: "My favorite person" },
-  { id: 6, src: null, caption: "Us" },
+  { id: 1, src: gallery1, caption: "Our first moment" },
+  { id: 2, src: gallery2, caption: "Adventures together" },
+  { id: 3, src: gallery3, caption: "Precious memories" },
+  { id: 4, src: gallery4, caption: "Forever yours" },
+  { id: 5, src: gallery5, caption: "My favorite person" },
+  { id: 6, src: gallery6, caption: "Us" },
 ];
 
 const SlideGallery = () => {
@@ -52,18 +59,11 @@ const SlideGallery = () => {
               className="group relative aspect-square"
             >
               <div className="absolute inset-0 bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg overflow-hidden hover:border-rose/30 transition-all duration-500">
-                {image.src ? (
-                  <img
-                    src={image.src}
-                    alt={image.caption}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                ) : (
-                  <div className="w-full h-full flex flex-col items-center justify-center text-muted-foreground/50">
-                    <ImagePlus className="w-10 h-10 mb-2" />
-                    <span className="text-xs text-center px-2">Photo {image.id}</span>
-                  </div>
-                )}
+                <img
+                  src={image.src}
+                  alt={image.caption}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
                 
                 {/* Overlay with caption */}
                 <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center p-4">
@@ -75,16 +75,6 @@ const SlideGallery = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center text-muted-foreground/60 text-sm mt-8 font-serif italic"
-        >
-          Upload your photos to fill this gallery with your memories
-        </motion.p>
       </motion.div>
     </section>
   );
