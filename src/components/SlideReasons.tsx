@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Heart, Feather } from 'lucide-react';
+import { Heart } from 'lucide-react';
 const reasons = ["your humor", "your face", "your honesty", "gorgeous", "smart", "caring", "sweet", "your ability to make me feel", "how you bring out the best in me", "your kindness", "understanding", "your creativity", "your jealousy", "your affection", "your passion", "always giving your all", "your silly side", "your pure soul", "your love for cartoons", "your energy", "how you treat and care about others", "you're talented", "the way you tease me", "you're sweet", "you don't make me question if you love me", "your company", "you're precious", "your warmth", "how you tell me about everything", "our conversations", "how we communicate", "your taste in music", "your personality", "how cute you are", "you've shown me true love", "the mole on your chest", "how you show me off", "you're respectful", "your words", "you make me feel wanted", "you being clingy to me", "the posts you make", "when you talk about the shows you watch", "you're really attractive", "you're adorable", "you always pay attention to small details", "your vibes", "your name", "your hair", "your cat", "your heart", "your voice", "how you try your best", "you always surprise me", "your gentleness", "your eyes", "you always consider my feelings before doing or saying anything", "the way you talk", "you're special in literally every way", "you're my person"];
 const SlideReasons = () => {
   return <section className="slide-container relative py-24">
@@ -16,11 +16,11 @@ const SlideReasons = () => {
     }} className="max-w-4xl mx-auto w-full">
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <Feather className="w-5 h-5 text-rose" />
+            
             <span className="text-muted-foreground uppercase tracking-[0.3em] text-sm">
               Things I Love About You
             </span>
-            <Feather className="w-5 h-5 text-rose" />
+            
           </div>
           
           <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-4">
