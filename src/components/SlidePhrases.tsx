@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Heart } from 'lucide-react';
+import { Music, Heart } from 'lucide-react';
 const phrases = [{
   quote: "For the thrill of your touch I will shamefully lust",
   song: "A Love Like War",
@@ -50,7 +50,7 @@ const SlidePhrases = () => {
         }} className="flex items-center justify-center gap-3 mb-4">
             
             <span className="text-rose uppercase tracking-[0.3em] text-sm">Melodies</span>
-            
+            <Music className="w-5 h-5 text-rose" />
           </motion.div>
           <h2 className="font-display text-4xl md:text-5xl text-foreground mb-4">
             Phrases That Remind Me of You
