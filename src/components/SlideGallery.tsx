@@ -5,31 +5,14 @@ import gallery3 from '@/assets/gallery-3.jpg';
 import gallery4 from '@/assets/gallery-4.jpg';
 import gallery5 from '@/assets/gallery-5.jpg';
 import gallery6 from '@/assets/gallery-6.jpg';
-const galleryImages = [{
-  id: 1,
-  src: gallery1,
-  caption: "Our first moment"
-}, {
-  id: 2,
-  src: gallery2,
-  caption: "Adventures together"
-}, {
-  id: 3,
-  src: gallery3,
-  caption: "Precious memories"
-}, {
-  id: 4,
-  src: gallery4,
-  caption: "Forever yours"
-}, {
-  id: 5,
-  src: gallery5,
-  caption: "My favorite person"
-}, {
-  id: 6,
-  src: gallery6,
-  caption: "Us"
-}];
+const galleryImages = [
+  { id: 1, src: gallery1 },
+  { id: 2, src: gallery2 },
+  { id: 3, src: gallery3 },
+  { id: 4, src: gallery4 },
+  { id: 5, src: gallery5 },
+  { id: 6, src: gallery6 },
+];
 const SlideGallery = () => {
   return <section className="min-h-screen flex items-center justify-center py-20 px-4">
       <motion.div initial={{
@@ -76,14 +59,8 @@ const SlideGallery = () => {
           once: true
         }} className="group relative aspect-square">
               <div className="absolute inset-0 bg-card/30 backdrop-blur-sm border border-border/50 rounded-lg overflow-hidden hover:border-rose/30 transition-all duration-500">
-                <img src={image.src} alt={image.caption} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                <img src={image.src} alt="Gallery photo" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 
-                {/* Overlay with caption */}
-                <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end justify-center p-4">
-                  <p className="font-serif text-sm text-foreground/90 italic text-center">
-                    {image.caption}
-                  </p>
-                </div>
               </div>
             </motion.div>)}
         </div>

@@ -10,7 +10,7 @@ const phrases = [{
   artist: "Normandie"
 }, {
   quote: "How come you're the only girl that gets me off",
-  song: "Hurts Lust",
+  song: "Hearts Lust",
   artist: "Milune"
 }, {
   quote: "You're the closest to Heaven that I'll ever be",
@@ -54,7 +54,7 @@ const SlidePhrases = () => {
           </motion.div>
           
           <p className="text-muted-foreground font-serif italic text-lg">
-            Words that capture what I feel
+            Lyrics that capture how I feel
           </p>
           <div className="w-24 h-px bg-rose/50 mx-auto mt-6" />
         </div>
