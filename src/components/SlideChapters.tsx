@@ -33,7 +33,7 @@ const chapters = [{
   content: "She's mine now, and i still can't believe it, i get to call her my girlfriend, i get to talk about her, post her, let people know she's with me. I love dating her, i love being her girlfriend, i love that the world gets to know her as mine and that I get to be hers."
 }, {
   number: 11,
-  content: "Have you ever felt your heart ache from how much you feel for someone? Like your feelings are too strong you want kneel before them and take your heart out, just to give to them, like you want to offer your mind, your body, and everything you are just to keep them, it feels sick sometimes, like they own your heart and it no longer belongs to you. I know this feeling so well, i recognize it, i feel it, and it has taken over me. I'm in love with her."
+  content: "Have you ever felt your heart ache from how much you feel for someone? Like your feelings are too strong you want to kneel before them and take your heart out, just to give to them, like you want to offer your mind, your body, and everything you are just to keep them, it feels sick sometimes, like they own your heart and it no longer belongs to you. I know this feeling so well, i recognize it, i feel it, and it has taken over me. I'm in love with her."
 }];
 const SlideChapters = () => {
   return <section className="slide-container relative py-24">
